@@ -123,6 +123,7 @@ def num_points_scored(name)
       info.each do |attribute, stuff| 
         if stuff.keys.include?(name) 
           return hash[location][attribute][name][:points]
+        else
       end
     end
   end
