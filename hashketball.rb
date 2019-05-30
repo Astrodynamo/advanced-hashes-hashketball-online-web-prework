@@ -118,7 +118,8 @@ def game_hash
 end
   
 def num_points_scored(name)
-  game_hash.each do |location, info| 
+  hash = game_hash
+  hash.each do |location, info| 
     info.each do |attribute, stuff| 
       if stuff.include?(name) 
        return hash[location][attribute][name][:points]
